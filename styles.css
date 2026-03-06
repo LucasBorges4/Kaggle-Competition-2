@@ -1,1 +1,375 @@
-/* css styles */
+/* Modern CSS Improvements for the Portfolio Site */
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #7c3aed;
+    --accent-color: #06b6d4;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --bg-tertiary: #f3f4f6;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --radius: 8px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography Improvements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+/* Code Blocks */
+pre {
+    background-color: var(--bg-tertiary);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    overflow-x: auto;
+}
+
+code {
+    background-color: var(--bg-tertiary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: var(--bg-primary);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+/* Navbar Improvements */
+.navbar {
+    background-color: var(--bg-primary) !important;
+    box-shadow: var(--shadow-md) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 700 !important;
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-secondary) !important;
+    font-weight: 500 !important;
+    margin: 0 0.5rem !important;
+    border-radius: var(--radius) !important;
+    transition: var(--transition) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--bg-secondary) !important;
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Sidebar Improvements */
+.toc-active {
+    background-color: var(--bg-primary) !important;
+    border-radius: var(--radius) !important;
+    padding: 1.5rem !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.toc-active h2 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    color: var(--primary-color) !important;
+}
+
+.toc-active ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.toc-active li {
+    margin-bottom: 0.5rem !important;
+}
+
+.toc-active a {
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: var(--radius) !important;
+    display: block !important;
+    transition: var(--transition) !important;
+}
+
+.toc-active a:hover {
+    background-color: var(--bg-secondary) !important;
+    color: var(--primary-color) !important;
+    transform: translateX(4px);
+}
+
+.toc-active a.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Content Area */
+#quarto-content {
+    background-color: var(--bg-primary) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow-sm) !important;
+    padding: 2rem !important;
+}
+
+/* Cell Improvements */
+.cell {
+    margin-bottom: 2rem !important;
+    border-radius: var(--radius) !important;
+    overflow: hidden !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.cell-output {
+    background-color: var(--bg-secondary) !important;
+    border-top: 1px solid var(--border-color) !important;
+    padding: 1rem !important;
+}
+
+.cell-output-display {
+    background-color: var(--bg-primary) !important;
+    border-radius: var(--radius) !important;
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+}
+
+.cell-output-stdout {
+    background-color: var(--bg-tertiary) !important;
+    border-left: 4px solid var(--accent-color) !important;
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+}
+
+/* Code Copy Button */
+.code-copy-button {
+    position: absolute !important;
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: var(--radius) !important;
+    padding: 0.5rem 1rem !important;
+    cursor: pointer !important;
+    transition: var(--transition) !important;
+    font-size: 0.875rem !important;
+}
+
+.code-copy-button:hover {
+    background-color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Plotly Charts */
+.plotly-graph-div {
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow-md) !important;
+    margin: 1rem 0 !important;
+}
+
+/* Interactive Elements */
+.btn {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: var(--radius) !important;
+    padding: 0.75rem 1.5rem !important;
+    cursor: pointer !important;
+    transition: var(--transition) !important;
+    font-weight: 500 !important;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.25rem !important;
+        padding: 0.5rem !important;
+    }
+    
+    .cell {
+        margin-bottom: 1rem !important;
+    }
+    
+    #quarto-content {
+        padding: 1rem !important;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cell {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Loading States */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .navbar, .sidebar {
+        display: none;
+    }
+    
+    .cell {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    pre {
+        page-break-inside: avoid;
+    }
+}
+
+/* Syntax Highlighting Improvements */
+.sourceCode {
+    background-color: var(--bg-tertiary);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.keyword {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.string {
+    color: var(--secondary-color);
+}
+
+.number {
+    color: var(--accent-color);
+}
+
+.comment {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.function {
+    color: var(--primary-color);
+    font-weight: 600;
+}
