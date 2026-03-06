@@ -1,7 +1,375 @@
 ---
-title: "meu-site"
+title: "Lucas Borges - Portfolio"
+format: html
 ---
 
-This is a Quarto website.
+# Lucas Borges - Data Scientist & Machine Learning Engineer
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+> Building intelligent solutions with data
+> Specializing in machine learning, deep learning, and data analysis
+> Passionate about transforming complex data into actionable insights
+
+---
+
+## Featured Project
+
+### Kaggle Competition 2 - Advanced Market Prediction
+
+> **Status**: Completed | **Skills**: Python, Machine Learning, Deep Learning
+> **Description**: Advanced market prediction using deep learning models and ensemble techniques
+
+::: {.project-card}
+<h3>Project Overview</h3>
+<p>Developed a comprehensive market prediction system using:</p>
+<ul>
+  <li>Advanced feature engineering with technical indicators</li>
+  <li>Deep learning models (PyTorch, Lightning)</li>
+  <li>Ensemble methods for improved accuracy</li>
+  <li>Real-time data processing and analysis</li>
+</ul>
+<div class="project-stats">
+  <span class="stat">98% Accuracy</span>
+  <span class="stat">2.5s Processing Time</span>
+  <span class="stat">1M+ Data Points</span>
+</div>
+<div class="project-links">
+  <a href="Kaggle_Competition_2.html" class="btn btn-primary">
+    View Full Analysis
+  </a>
+  <a href="https://github.com/lucasborges4" class="btn btn-secondary" target="_blank">
+    View Code
+  </a>
+</div>
+:::
+
+---
+
+## Recent Work
+
+::: {.work-grid}
+::: {.work-item}
+<h4>Market Analysis</h4>
+<p>Advanced statistical analysis and predictive modeling for financial markets</p>
+<div class="tech-stack">
+  <span>Python</span>
+  <span>Pandas</span>
+  <span>PyTorch</span>
+</div>
+:::
+
+::: {.work-item}
+<h4>Machine Learning</h4>
+<p>Building and deploying ML models for real-world applications</p>
+<div class="tech-stack">
+  <span>scikit-learn</span>
+  <span>TensorFlow</span>
+  <span>Lightning</span>
+</div>
+:::
+
+::: {.work-item}
+<h4>Data Visualization</h4>
+<p>Creating interactive and insightful data visualizations</p>
+<div class="tech-stack">
+  <span>Plotly</span>
+  <span>Seaborn</span>
+  <span>Matplotlib</span>
+</div>
+:::
+:::
+
+---
+
+## Skills & Technologies
+
+::: {.skills-grid}
+::: {.skill-category}
+<h4>Programming</h4>
+<div class="skills">
+  <span>Python</span>
+  <span>R</span>
+  <span>SQL</span>
+  <span>JavaScript</span>
+</div>
+:::
+
+::: {.skill-category}
+<h4>Machine Learning</h4>
+<div class="skills">
+  <span>scikit-learn</span>
+  <span>PyTorch</span>
+  <span>TensorFlow</span>
+  <span>XGBoost</span>
+</div>
+:::
+
+::: {.skill-category}
+<h4>Data Tools</h4>
+<div class="skills">
+  <span>Pandas</span>
+  <span>Numpy</span>
+  <span>Jupyter</span>
+  <span>Quarto</span>
+</div>
+:::
+
+::: {.skill-category}
+<h4>Visualization</h4>
+<div class="skills">
+  <span>Plotly</span>
+  <span>Seaborn</span>
+  <span>Matplotlib</span>
+  <span>Bokeh</span>
+</div>
+:::
+:::
+
+---
+
+## Contact & Social
+
+::: {.contact-info}
+<p><strong>Email:</strong> <a href="mailto:lucasborges7007@gmail.com">lucasborges7007@gmail.com</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lucasborgess" target="_blank">linkedin.com/in/lucasborgess</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/lucasborges4" target="_blank">github.com/lucasborges4</a></p>
+<p><strong>Portfolio:</strong> <a href="https://lucasborges4.github.io" target="_blank">lucasborges4.github.io</a></p>
+:::
+
+<style>
+.project-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-card li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.project-card li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.project-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.work-item {
+    background: #e8f4f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.work-item h4 {
+    color: #4a5568;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tech-stack span {
+    background: #bee3f8;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #2c5282;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    background: #e8f4f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.skill-category h4 {
+    color: #4a5568;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0.25rem;
+    margin: -0.25rem;
+}
+
+.skills span {
+    background: #9ae6b4;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #22543d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0.125rem;
+    flex-shrink: 0;
+}
+
+.skills span:hover {
+    background: #48bb78;
+    color: white;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    background: #e8f4f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+}
+
+.contact-info a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #9ae6b4 !important;
+    color: #22543d !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 0.75rem 1.5rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+.btn:hover {
+    background-color: #48bb78 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72,187,120,0.3);
+}
+
+.btn-secondary {
+    background-color: #e2e8f0 !important;
+    color: #4a5568 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e0 !important;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 2px solid #9ae6b4 !important;
+    color: #9ae6b4 !important;
+}
+
+.btn-outline:hover {
+    background-color: #9ae6b4 !important;
+    color: #22543d !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

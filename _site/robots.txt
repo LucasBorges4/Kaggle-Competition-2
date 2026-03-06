@@ -1,1 +1,0 @@
-Sitemap: https://lucasborges4.github.io/Kaggle-Competition-2/sitemap.xml

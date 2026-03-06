@@ -2,9 +2,44 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Lucas Borges",
     "section": "",
-    "text": "About this site"
+    "text": "Data Scientist | Machine Learning Engineer | Data Analyst\n\n\n\n\nHello! My name is Lucas Borges, I’m passionate about transforming data into valuable insights and building intelligent solutions with machine learning. With a background in Data Science and hands-on experience in real-world projects, I’m dedicated to creating predictive models that solve complex problems.\n\n\n\n\n\n\n\n\nPython R SQL JavaScript\n\n\n\n\n\nscikit-learn PyTorch TensorFlow XGBoost\n\n\n\n\n\nPandas Numpy Matplotlib Seaborn\n\n\n\n\n\nPlotly Bokeh Tableau Power BI\n\n\n\n\n\n\n\n\n\n\nStatus: Completed | Skills: Deep Learning, Ensemble Methods, Feature Engineering Description: Developed an advanced market prediction system using deep learning models and ensemble techniques\n\n\n\n\n\nPredictive Analytics: Forecasting models for different domains\nData Processing: Cleaning and transformation of large datasets\nInteractive Visualization: Dashboards and interactive reports\n\n\n\n\n\n\nI believe that well-treated data and well-built models can transform businesses. My focus is on:\n\nQuality: Clean and well-documented code\nPerformance: Efficient and scalable models\nImpact: Solutions that generate real value\n\n\n\n\n\nLet’s talk about how data science can help your project or business!\n\n Send Email   LinkedIn   GitHub"
+  },
+  {
+    "objectID": "about.html#who-am-i",
+    "href": "about.html#who-am-i",
+    "title": "About Lucas Borges",
+    "section": "",
+    "text": "Hello! My name is Lucas Borges, I’m passionate about transforming data into valuable insights and building intelligent solutions with machine learning. With a background in Data Science and hands-on experience in real-world projects, I’m dedicated to creating predictive models that solve complex problems."
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "About Lucas Borges",
+    "section": "",
+    "text": "Python R SQL JavaScript\n\n\n\n\n\nscikit-learn PyTorch TensorFlow XGBoost\n\n\n\n\n\nPandas Numpy Matplotlib Seaborn\n\n\n\n\n\nPlotly Bokeh Tableau Power BI"
+  },
+  {
+    "objectID": "about.html#projects-and-experience",
+    "href": "about.html#projects-and-experience",
+    "title": "About Lucas Borges",
+    "section": "",
+    "text": "Status: Completed | Skills: Deep Learning, Ensemble Methods, Feature Engineering Description: Developed an advanced market prediction system using deep learning models and ensemble techniques\n\n\n\n\n\nPredictive Analytics: Forecasting models for different domains\nData Processing: Cleaning and transformation of large datasets\nInteractive Visualization: Dashboards and interactive reports"
+  },
+  {
+    "objectID": "about.html#work-philosophy",
+    "href": "about.html#work-philosophy",
+    "title": "About Lucas Borges",
+    "section": "",
+    "text": "I believe that well-treated data and well-built models can transform businesses. My focus is on:\n\nQuality: Clean and well-documented code\nPerformance: Efficient and scalable models\nImpact: Solutions that generate real value"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Lucas Borges",
+    "section": "",
+    "text": "Let’s talk about how data science can help your project or business!\n\n Send Email   LinkedIn   GitHub"
   },
   {
     "objectID": "Kaggle_Competition_2.html",
@@ -107,8 +142,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "meu-site",
+    "title": "Lucas Borges - Portfolio",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Building intelligent solutions with data Specializing in machine learning, deep learning, and data analysis Passionate about transforming complex data into actionable insights\n\n\n\n\n\n\n\nStatus: Completed | Skills: Python, Machine Learning, Deep Learning Description: Advanced market prediction using deep learning models and ensemble techniques\n\n\n\n\nDeveloped a comprehensive market prediction system using:\n\n\n\nAdvanced feature engineering with technical indicators\n\n\nDeep learning models (PyTorch, Lightning)\n\n\nEnsemble methods for improved accuracy\n\n\nReal-time data processing and analysis\n\n\n\n98% Accuracy 2.5s Processing Time 1M+ Data Points\n\n\n View Full Analysis   View Code \n\n\n\n\n\n\n\n\n\n\n\nAdvanced statistical analysis and predictive modeling for financial markets\n\n\nPython Pandas PyTorch\n\n\n\n\n\nBuilding and deploying ML models for real-world applications\n\n\nscikit-learn TensorFlow Lightning\n\n\n\n\n\nCreating interactive and insightful data visualizations\n\n\nPlotly Seaborn Matplotlib\n\n\n\n\n\n\n\n\n\n\n\nPython R SQL JavaScript\n\n\n\n\n\nscikit-learn PyTorch TensorFlow XGBoost\n\n\n\n\n\nPandas Numpy Jupyter Quarto\n\n\n\n\n\nPlotly Seaborn Matplotlib Bokeh\n\n\n\n\n\n\n\n\n\nEmail: lucasborges7007@gmail.com\n\n\nLinkedIn: linkedin.com/in/lucasborgess\n\n\nGitHub: github.com/lucasborges4\n\n\nPortfolio: lucasborges4.github.io"
+  },
+  {
+    "objectID": "index.html#featured-project",
+    "href": "index.html#featured-project",
+    "title": "Lucas Borges - Portfolio",
+    "section": "",
+    "text": "Status: Completed | Skills: Python, Machine Learning, Deep Learning Description: Advanced market prediction using deep learning models and ensemble techniques\n\n\n\n\nDeveloped a comprehensive market prediction system using:\n\n\n\nAdvanced feature engineering with technical indicators\n\n\nDeep learning models (PyTorch, Lightning)\n\n\nEnsemble methods for improved accuracy\n\n\nReal-time data processing and analysis\n\n\n\n98% Accuracy 2.5s Processing Time 1M+ Data Points\n\n\n View Full Analysis   View Code"
+  },
+  {
+    "objectID": "index.html#recent-work",
+    "href": "index.html#recent-work",
+    "title": "Lucas Borges - Portfolio",
+    "section": "",
+    "text": "Advanced statistical analysis and predictive modeling for financial markets\n\n\nPython Pandas PyTorch\n\n\n\n\n\nBuilding and deploying ML models for real-world applications\n\n\nscikit-learn TensorFlow Lightning\n\n\n\n\n\nCreating interactive and insightful data visualizations\n\n\nPlotly Seaborn Matplotlib"
+  },
+  {
+    "objectID": "index.html#skills-technologies",
+    "href": "index.html#skills-technologies",
+    "title": "Lucas Borges - Portfolio",
+    "section": "",
+    "text": "Python R SQL JavaScript\n\n\n\n\n\nscikit-learn PyTorch TensorFlow XGBoost\n\n\n\n\n\nPandas Numpy Jupyter Quarto\n\n\n\n\n\nPlotly Seaborn Matplotlib Bokeh"
+  },
+  {
+    "objectID": "index.html#contact-social",
+    "href": "index.html#contact-social",
+    "title": "Lucas Borges - Portfolio",
+    "section": "",
+    "text": "Email: lucasborges7007@gmail.com\n\n\nLinkedIn: linkedin.com/in/lucasborgess\n\n\nGitHub: github.com/lucasborges4\n\n\nPortfolio: lucasborges4.github.io"
   }
 ]

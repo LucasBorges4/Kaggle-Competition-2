@@ -1,39 +1,526 @@
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);} 
-div.column{flex: auto; overflow-x: auto;} 
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;} 
-ul.task-list{list-style: none;} 
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em;
-  vertical-align: middle;
+/* Paleta de Cores - Cinza Azulado e Verde */
+:root {
+    --primary-blue: #4299e1;
+    --primary-green: #48bb78;
+    --bg-blue-gray: #e8f4f8;
+    --bg-blue-gray-hover: #bee3f8;
+    --text-blue-gray: #4a5568;
+    --text-green-dark: #22543d;
+    --border-color: #e2e8f0;
+    --white: #ffffff;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --radius: 8px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+
+/* Text Selection Color */
+::selection {
+    background-color: rgba(66, 153, 225, 0.3);
+    color: var(--text-blue-gray);
 }
+
+::-moz-selection {
+    background-color: rgba(66, 153, 225, 0.3);
+    color: var(--text-blue-gray);
+}
+
+/* Base Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-blue-gray);
+    background-color: var(--bg-blue-gray);
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-blue-gray);
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--primary-blue);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--text-blue-gray);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-blue-gray);
+}
+
+/* Code Blocks */
+pre {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    overflow-x: auto;
+}
+
+code {
+    background-color: var(--bg-blue-gray);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: var(--bg-blue-gray);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--white) !important;
+    box-shadow: var(--shadow-sm) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 700 !important;
+    color: var(--primary-blue) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-blue-gray) !important;
+    font-weight: 500 !important;
+    margin: 0 0.5rem !important;
+    border-radius: var(--radius) !important;
+    transition: var(--transition) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--bg-blue-gray) !important;
+    color: var(--primary-blue) !important;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-blue) !important;
+    color: white !important;
+}
+
+/* Sidebar TOC */
+.toc-active {
+    background-color: var(--white) !important;
+    border-radius: var(--radius) !important;
+    padding: 1.5rem !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.toc-active h2 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    color: var(--primary-blue) !important;
+}
+
+.toc-active ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.toc-active li {
+    margin-bottom: 0.5rem !important;
+}
+
+.toc-active a {
+    color: var(--text-blue-gray) !important;
+    text-decoration: none !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: var(--radius) !important;
+    display: block !important;
+    transition: var(--transition) !important;
+}
+
+.toc-active a:hover {
+    background-color: var(--bg-blue-gray) !important;
+    color: var(--primary-blue) !important;
+    transform: translateX(4px);
+}
+
+.toc-active a.active {
+    background-color: var(--primary-blue) !important;
+    color: white !important;
+}
+
+/* Project Card */
+.project-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-card li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.project-card li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.project-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Work Grid */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.work-item {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.work-item h4 {
+    color: var(--primary-blue);
+    margin-top: 0;
+}
+
+/* Tech Stack with spacing and scroll */
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.tech-stack span {
+    background: var(--bg-blue-gray);
+    padding: 0.35rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: var(--text-blue-gray);
+    margin: 0.125rem;
+    flex-shrink: 0;
+}
+
+/* Skills Grid with scrollable tags */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.skill-category h4 {
+    color: var(--primary-blue);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0.25rem;
+    margin: -0.25rem;
+}
+
+.skills span {
+    background: var(--bg-blue-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-blue-gray);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0.125rem;
+    flex-shrink: 0;
+}
+
+.skills span:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+/* Contact Info with links */
+.contact-info {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.75rem;
+    color: var(--text-blue-gray);
+}
+
+.contact-info a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--primary-green) !important;
+    color: var(--text-green-dark) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 0.75rem 1.5rem !important;
+    cursor: pointer !important;
+    transition: var(--transition) !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+.btn:hover {
+    background-color: #38a169 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: #e2e8f0 !important;
+    color: var(--text-blue-gray) !important;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e0 !important;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 2px solid var(--primary-green) !important;
+    color: var(--primary-green) !important;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-green) !important;
+    color: var(--text-green-dark) !important;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-buttons .btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(72,187,120,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .skill-category {
+        padding: 1rem;
+    }
+    
+    .skills span {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .contact-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    body {
+        background-color: white;
+    }
+    
+    .navbar, .sidebar {
+        display: none;
+    }
+    
+    pre {
+        page-break-inside: avoid;
+    }
 }
-pre.numberSource code { counter-reset: source-line 0; }
-pre.numberSource code > span { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before {
-  content: counter(source-line);
-  position: relative; left: -1em; text-align: right;
-  vertical-align: baseline; display: inline-block;
-  padding: 0 4px; width: 4em;
-  -webkit-user-select: none; user-select: none;
+
+/* Scrollbar styling for skills container */
+.skills::-webkit-scrollbar {
+    width: 8px;
 }
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+
+.skills::-webkit-scrollbar-track {
+    background: var(--bg-blue-gray);
+    border-radius: 4px;
+}
+
+.skills::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: 4px;
+}
+
+.skills::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-blue);
+    opacity: 0.8;
 }

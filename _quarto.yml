@@ -2,16 +2,26 @@ project:
   type: website
 
 website:
-  title: "Portifólio em Ciência de Dados - Lucas Borges"
+  title: "Lucas Borges - Data Scientist"
   navbar:
     left:
       - href: index.qmd
         text: Início
-      - href: Kaggle_Competition_2.ipynb
-        text: Kaggle_Competition_2
+      - href: Kaggle_Competition_2.html
+        text: Kaggle Competition
+      - href: about.qmd
+        text: Sobre
+    right:
+      - icon: github
+        href: https://github.com/lucasborges12
+      - icon: linkedin
+        href: https://linkedin.com/in/lucasborges12
+      - icon: envelope
+        href: mailto:lucasborges12@example.com
 
 format:
   html:
     theme: cosmo
     toc: true
+    css: styles.css
 

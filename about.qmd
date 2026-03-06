@@ -1,5 +1,229 @@
 ---
-title: "About"
+title: "About Lucas Borges"
+format: html
 ---
 
-About this site
+# About Lucas Borges
+
+> Data Scientist | Machine Learning Engineer | Data Analyst
+
+---
+
+## Who am I?
+
+Hello! My name is Lucas Borges, I'm passionate about transforming data into valuable insights and building intelligent solutions with machine learning. With a background in Data Science and hands-on experience in real-world projects, I'm dedicated to creating predictive models that solve complex problems.
+
+---
+
+## Technical Skills
+
+::: {.skills-grid}
+::: {.skill-category}
+<h4>Programming Languages</h4>
+<div class="skills">
+  <span>Python</span>
+  <span>R</span>
+  <span>SQL</span>
+  <span>JavaScript</span>
+</div>
+:::
+
+::: {.skill-category}
+<h4>Machine Learning</h4>
+<div class="skills">
+  <span>scikit-learn</span>
+  <span>PyTorch</span>
+  <span>TensorFlow</span>
+  <span>XGBoost</span>
+</div>
+:::
+
+::: {.skill-category}
+<h4>Data Science</h4>
+<div class="skills">
+  <span>Pandas</span>
+  <span>Numpy</span>
+  <span>Matplotlib</span>
+  <span>Seaborn</span>
+</div>
+:::
+
+::: {.skill-category}
+<h4>Visualization</h4>
+<div class="skills">
+  <span>Plotly</span>
+  <span>Bokeh</span>
+  <span>Tableau</span>
+  <span>Power BI</span>
+</div>
+:::
+:::
+
+---
+
+## Projects and Experience
+
+### Kaggle Competition 2
+> **Status**: Completed | **Skills**: Deep Learning, Ensemble Methods, Feature Engineering
+> **Description**: Developed an advanced market prediction system using deep learning models and ensemble techniques
+
+### Other Projects
+- **Predictive Analytics**: Forecasting models for different domains
+- **Data Processing**: Cleaning and transformation of large datasets
+- **Interactive Visualization**: Dashboards and interactive reports
+
+---
+
+## Work Philosophy
+
+I believe that well-treated data and well-built models can transform businesses. My focus is on:
+
+- **Quality**: Clean and well-documented code
+- **Performance**: Efficient and scalable models
+- **Impact**: Solutions that generate real value
+
+---
+
+## Contact
+
+Let's talk about how data science can help your project or business!
+
+<div class="contact-buttons">
+  <a href="mailto:lucasborges7007@gmail.com" class="btn btn-primary">
+    Send Email
+  </a>
+  <a href="https://linkedin.com/in/lucasborgess" class="btn btn-secondary" target="_blank">
+    LinkedIn
+  </a>
+  <a href="https://github.com/lucasborges4" class="btn btn-outline" target="_blank">
+    GitHub
+  </a>
+</div>
+
+<style>
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    background: #e8f4f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.skill-category h4 {
+    color: #4a5568;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0.25rem;
+    margin: -0.25rem;
+}
+
+.skills span {
+    background: #9ae6b4;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #22543d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0.125rem;
+    flex-shrink: 0;
+}
+
+.skills span:hover {
+    background: #48bb78;
+    color: white;
+    transform: scale(1.05);
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-buttons .btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-buttons .btn-primary {
+    background: #9ae6b4;
+    color: #22543d;
+}
+
+.contact-buttons .btn-primary:hover {
+    background: #48bb78;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(72,187,120,0.3);
+}
+
+.contact-buttons .btn-secondary {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+.contact-buttons .btn-secondary:hover {
+    background: #cbd5e0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.contact-buttons .btn-outline {
+    background: transparent;
+    border: 2px solid #9ae6b4;
+    color: #9ae6b4;
+}
+
+.contact-buttons .btn-outline:hover {
+    background: #9ae6b4;
+    color: #22543d;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+</style>
