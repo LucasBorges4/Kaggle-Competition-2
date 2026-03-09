@@ -1,10 +1,6 @@
 # Portfólio em Ciência de Dados - Lucas Borges
 
-Um portfólio interativo showcasing projetos e análises em Ciência de Dados, desenvolvido usando Quarto e otimizado para hospedagem no Hugging Face Spaces.
-
-## 🚀 Demonstração
-
-Este projeto está hospedado no Hugging Face Spaces: [https://huggingface.co/spaces/lucasborges/portfolio-data-science](https://huggingface.co/spaces/lucasborges/portfolio-data-science)
+Um portfólio interativo showcasing projetos e análises em Ciência de Dados, desenvolvido usando Quarto.
 
 ## 📋 Sobre
 
