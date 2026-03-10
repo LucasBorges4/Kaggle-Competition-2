@@ -533,12 +533,13 @@ blockquote p {
 }
 
 .project-card li:before {
-    content: "✓";
+    content: "check_circle";
+    font-family: 'Material Icons';
     position: absolute;
     left: 0;
     color: var(--secondary-500);
-    font-weight: bold;
     font-size: 1.25rem;
+    font-weight: normal;
 }
 
 .project-stats {
