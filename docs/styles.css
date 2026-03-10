@@ -881,6 +881,50 @@ blockquote p {
     }
 }
 
+/* Social Icons - Centralizado e fácil de modificar */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--neutral-100);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border: 1px solid var(--neutral-200);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-500);
+    color: var(--white);
+    border-color: var(--primary-500);
+    box-shadow: var(--shadow-2);
+    transform: translateY(-2px);
+}
+
+/* Ícones específicos (fácil de modificar) */
+.icon-github::before { content: "code"; }
+.icon-linkedin::before { content: "work"; }
+.icon-envelope::before { content: "email"; }
+.icon-twitter::before { content: "public"; }
+.icon-instagram::before { content: "photo_camera"; }
+
+/* Navbar social icons */
+.navbar .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+}
+
+/* Footer social icons */
+.footer-social .social-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+}
+
 /* Utility Classes */
 .mt-0 { margin-top: 0; }
 .mb-0 { margin-bottom: 0; }
